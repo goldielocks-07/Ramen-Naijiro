@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JavaScript links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../Ramen-Naijiro/JQUERY/search-bar.js"></script>
+    <script src="../Ramen-Naijiro/JQUERY/navjs.js"></script>
+
+    <!-- FOOTER links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Ramen-Naijiro/CSS/FOOTERSTYLE.css">
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="../Ramen-Naijiro/CSS/NAVSTYLE.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../Ramen-Naijiro/CSS/MENUSTYLE.css">
+    <link rel="stylesheet" href="../Ramen-Naijiro/CSS/scrollbehavior.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.cdnfonts.com/css/radio-canada-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/familjen-grotesk" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/keshiki" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
+
+    <title>Menu</title>
+</head>
+
+
+<body id="menu">
+    <header class="header">
+        <nav class="menu_bar">
+            <div id="logo"><img src="../Ramen-Naijiro/IMAGES/LOGO.png" alt="logo" class="logo"></div>
+
+            <ul>
+                <li><a href="../Ramen-Naijiro/index.html">Home</a></li>
+                <li><a href="menu.html#menu" id="menu_link">Menu <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="#ramens">Ramens</a></li>
+                        <li><a href="#sides">Sides</a></li>
+                        <li><a href="#add-ons">Add-ons</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="../Ramen-Naijiro/contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="item item1"><img src="../Ramen-Naijiro/IMAGES/ramendrawing.png" alt="img" class="img1"></div>
+            <div class="item item2">MENU</div>
+            <div class="item item3"><img src="../Ramen-Naijiro/IMAGES/lemonade.png" alt="img" class="img2"></div>
+            <div class="item item4">MENU</div>
+            <div class="item item5"><img src="../Ramen-Naijiro/IMAGES/gyoza.png" alt="img" class="img3"></div>
+            <div class="item item6">MENU</div>
+            <div class="item item7"><img src="../Ramen-Naijiro/IMAGES/katsudon.png" alt="img" class="img4"></div>
+            <div class="item item8">MENU</div>
+        </div>
+
+        <!-- search bar --------------------------------------- -->
+        <div class="search-div">
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search Food" id="search-bar">
+            </div>
+            <ul id="list">
+                <li><a href="#img-tonkotsu">TONKOTSU</a></li>
+                <li><a href="#img-miso">MISO RAMEN</a></li>
+                <li><a href="#img-shoyu">SHOYU RAMEN</a></li>
+                <li><a href="#img-black">BLACK GARLIC RAMEN</a></li>
+                <li><a href="#img-tantanmen">TANTANMEN</a></li>
+                <li><a href="#img-red">NAIJIRO RED RAMEN</a></li>
+                <li><a href="#img-chick_butter">CHICKEN BUTTER RAMEN</a></li>
+                <li><a href="#img-wagyu">WAGYU RICE</a></li>
+                <li><a href="#img-wagyu-stick">WAGYU STICK</a></li>
+                <li><a href="#img-katsudon">KATSUDON</a></li>
+                <li><a href="#img-chz_katsudon">CHEEZY KATSUDON</a></li>
+                <li><a href="#img-blue">BLUE LEMONADE</a></li>
+                <li><a href="#img-red_iced">RED ICED TEA</a></li>
+                <li><a href="#img-chashu">CHASU PORK</a></li>
+                <li><a href="#img-gyoza">GYOZA</a></li>
+                <li><a href="#img-noodles">NOODLES</a></li>
+                <li><a href="#img-wakame">WAKAME</a></li>
+                <li><a href="#img-salted">SALTED SEAWEEDS STRIP</a></li>
+                <li><a href="#img-egg">TAMAGO EGG</a></li>
+                <li><a href="#img-kikurage">KIKURAGE</a></li>
+            </ul>
+        </div>
+        <!-- end of search bar -------------------------------------- -->
+
+        <div class="ramens" id="ramens">
+            <h1>Ramens</h1>
+            <div class="products">
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/TONKOTSU.jpg" alt="" id="img-tonkotsu">
+                    <div class="info">
+                        <h2>TONKOTSU</h2>
+                        <p class="ingredients">chasu pork ● kikurage ● leeks ● egg</p>
+                        <br>
+                        <p class="price">₱109</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/MISO-RAMEN.jpg" alt="" id="img-miso">
+                    <div class="info">
+                        <h2>MISO RAMEN</h2>
+                        <p class="ingredients">miso ● chasu pork ● wakame seaweeds ● onion springs ● egg</p>
+                        <p class="price">₱159</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/SHOYU-RAMEN.jpg" alt="" id="img-shoyu">
+                    <div class="info">
+                        <h2>SHOYU RAMEN</h2>
+                        <p class="ingredients">soy ● chasu pork ● beansprouts ● leeks ● egg</p>
+                        <p class="price">₱159</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/BLACK-GARLIC.jpg" alt="" id="img-black">
+                    <div class="info">
+                        <h2>BLACK GARLIC RAMEN</h2>
+                        <p class="ingredients">miso ● chasu pork ● wakame seaweeds ● onion springs ● egg</p>
+                        <p class="price">₱159</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/TANTANMEN.jpg" alt="" id="img-tantanmen">
+                    <div class="info">
+                        <h2>TANTANMEN</h2>
+                        <p class="ingredients">spicy ● chasu pork ● beansprouts ● seaweed strips ● sesame seeds ● egg</p>
+                        <p class="price">₱179</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/Naijiro-Red-Ramen.jpg" alt="" id="img-red">
+                    <div class="info">
+                        <h2>NAIJIRO RED RAMEN <i>(Special)</i></h2>
+                        <p class="ingredients">red spicy meatball ● chasu pork ● kikurage ● seaweed strips ● leeks ● onion spring ● sesame seeds ● egg</p>
+                        <p class="price">₱255</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/Chicken-Butter-Ramen.jpg" alt="" id="img-chick_butter">
+                    <div class="info">
+                        <h2>CHICKEN BUTTER RAMEN <i>(Special)</i></h2>
+                        <p class="ingredients">crispy chicken fillet ● wakame seaweeds ● onion spring ● cheese ● egg</p>
+                        <p class="price">₱255</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sides" id="sides">
+            <h1>Rice meals and sides</h1>
+            <div class="products">
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/wagyu-rice.jpg" alt="" id="img-wagyu">
+                    <div class="info">
+                        <h2>WAGYU RICE</h2>
+                        <p class="price2">₱185</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/Wagyu-Stick.jpg" alt="" id="img-wagyu-stick">
+                    <div class="info">
+                        <h2>WAGYU STICK</h2>
+                        <p class="price2">₱99</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/Katsudon.jpg" alt="" id="img-katsudon">
+                    <div class="info">
+                        <h2>KATSUDON</h2>
+                        <p class="price2">₱169</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/Cheezy-Katsudon.jpg" alt="" id="img-chz_katsudon">
+                    <div class="info">
+                        <h2>CHEEZY KATSUDON RICE</h2>
+                        <p class="price2">₱179</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/GYOZA.jpg" alt="" id="img-gyoza">
+                    <div class="info">
+                        <h2>GYOZA</h2>
+                        <p class="price2">4PCS ₱85 / 6PCS ₱125</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-ons" id="add-ons">
+            <h1>Add-Ons</h1>
+            <div class="products">
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/CHASHU PORK.jpg" alt="" id="img-chashu">
+                    <div class="info">
+                        <h2>CHASU PORK</h2>
+                        <p class="price2">₱75</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/NOODLES.jpg" alt="" id="img-noodles">
+                    <div class="info">
+                        <h2>NOODLES</h2>
+                        <p class="price2">₱90</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/WAKAME.jpg" alt="" id="img-wakame">
+                    <div class="info">
+                        <h2>WAKAME</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/SALTED-SEAWEEDS-STRIP.jpg" alt="" id="img-salted">
+                    <div class="info">
+                        <h2>SALTED SEAWEEDS STRIP</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/TAMAGO EGG.jpg" alt="" id="img-egg">
+                    <div class="info">
+                        <h2>TAMAGO EGG</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/KIKURAGE.jpg" alt="" id="img-kikurage">
+                    <div class="info">
+                        <h2>KIKURAGE</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="drinks" id="drinks">
+            <h1>DRINKS</h1>
+            <div class="products">
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/BlueLemonade.jpg" alt="" id="img-blue">
+                    <div class="info">
+                        <h2>BLUE LEMONADE</h2>
+                        <p class="price3">Regular <span>₱40</span> / Large <span>₱50</span></p>
+                    </div>
+                </div>
+
+                <div id="item">
+                    <img src="../Ramen-Naijiro/IMAGES/RedIcedTea.jpg" alt="" id="img-red_iced">
+                    <div class="info">
+                        <h2>RED ICED TEA</h2>
+                        <p class="price3">Regular <span>₱40</span> / Large <span>₱50</span></p>
+                    </div>
+                </div>
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+        <p class="details">
+            RamenNaijiro Robinsons Ilocos Norte | Phone: 0939-989-0494 | Email: naijiroilocos@gmail.com
+        </p>
+        <p class="details2">
+            &copy; RAMEN NAIJIRO. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>

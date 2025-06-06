@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../IMAGES/BGG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 500px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: 20px; */
+}
+
+.logo1 {
+    width: 380px;
+    margin-left: 30px;
+}
+
+.location {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 19px;
+    color: red;
+    letter-spacing: 2px;
+}
+
+.location1 {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 19PX;
+    letter-spacing: 2px;
+}
+
+#image-container1 {
+    align-items: flex-end;
+    perspective: 1000px; /* For 3D effect */
+    display: flex;
+    z-index: 10;
+}
+
+
+/* ------- Rotating IMAGE CSS */
+#rotating-image {
+    width: 500px;
+}
+
+.rotating-image {
+    width: 300px;
+    height: auto;
+    transform-origin: center center;
+    transition: transform 0.1s linear; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#image-container1 {
+    position: absolute;
+    left: 0;
+    bottom: 160px;
+}
+
+#image-container1 .rotating-image {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Right image: show left half only */
+#image-container2 {
+    position: absolute;
+    right: 0;
+    top: 160px;
+}
+
+#image-container2 .rotating-image {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#image-container1 #rotating-image {
+    width: 500px;
+}
+
+/* ----------------------------- */
+
+/* ---------------- Fave --------------- */
+
+.fav_title {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    align-self: center;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-family: 'Keshiki', sans-serif;
+    padding: 10px;
+    width: 250px;
+    padding: 10px;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 300px;
+    margin-bottom: 300px;
+}
+
+.child-container {
+    margin: 0;
+    position: relative;
+    width: 25%;
+}
+
+.image {
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    /* height: 300px; */
+}
+
+.overlay {
+    border-radius: 5px;
+    border-top: 2px  solid red;
+    border-right: 2px  solid red;
+    border-left: 2px  solid red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.873);
+    overflow: hidden;
+    width: 100%;
+    height: 10%;
+    transition: .3s ease-in-out;
+}
+
+.child-container:hover  .overlay {
+    border-bottom: 2px  solid red;
+    height: 100%;
+    cursor: pointer;
+}
+
+.h1_food {
+    width: 100%;
+    margin-top: 30%;
+    color: rgb(255, 0, 0);
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+    /* font-family: 'Keshiki', sans-serif; */
+    transform: rotate(-5deg)skewX(-5deg);
+}
+
+
+
+/* ------------ Gallery ------------- */
+
+
+.gallery-title {
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Keshiki', sans-serif;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    width: 200px;
+    padding: 10px;
+}
+
+#gallery-content {
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.gallery-wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+
+.gallery-wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel {
+    border-top: 5px solid rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+    padding: 10px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.carousel img {
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.carousel .imgg:first-child {
+    margin-left: 0px;
+}
+
+
+
+/* ---------------- About ---------- */
+#aboutParent {
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-right: 30px;
+}
+
+#effect {
+    align-self: center;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Keshiki', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 550px;
+}
+
+
+
+#aboutchild {
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+#openingimg {
+    border-radius: 20px 20px 20px 20px;
+    width: 800px;
+    height: 800px;
+    margin-right: 3px;
+}
+
+#paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    background-color: #111111ad;
+    padding: 20px 30px;
+    height: 600px;
+}
+
+
+
+#paragraph #paragraph2 {
+    font-size: 18px;
+    text-align: justify;
+    color: #ffffff;
+    font-family: 'Radio Canada', sans-serif;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 580px) {
+    .logo1 {
+        width: 300px;
+    }
+
+    .location {
+        font-size: 20px;
+    }
+
+    .location1 {
+        font-size: 18px;
+    }
+    
+    .ramens {
+        font-size: 28px;
+        /* margin-bottom: 14px; */
+    }
+
+    .img {
+        width: 200px;
+    }
+
+    .content1 p {
+        color: red;
+        font-family: 'Familjen Grotesk', sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 415px) {
+    .logo1 {
+        width: 280px;
+    }
+
+    .location {
+        font-size: 16px;
+    }
+
+    .location1 {
+        font-size: 12px;
+    }
+
+    .ramens {
+        font-size: 24px;
+    }
+
+    .content1 p {
+        color: red;
+        font-family: 'Familjen Grotesk', sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+
